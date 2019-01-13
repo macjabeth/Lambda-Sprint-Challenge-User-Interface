@@ -66,6 +66,8 @@ p {
   line-height: 1.4;
 }
 
+/* Shared Styling */
+
 .container {
   width: 800px;
   margin: 0 auto;
@@ -77,27 +79,27 @@ p {
   margin-top: 25px;
 }
 
-.header-content > .navigation {
+.navigation {
   align-items: center;
   display: flex;
   flex: 2;
   justify-content: space-around;
 }
 
-.header-content > .navigation > a {
+.navigation > a {
   text-decoration: none;
   color: black;
 }
 
-.header-content > .navigation > a:hover {
+.navigation > a:hover {
   text-decoration: underline;
 }
 
-.header-content > .navigation > a.current {
+.navigation > a.current {
   color: rgb(160, 1, 30);
 }
 
-.header-content > .header-image {
+.header-image {
   margin: 15px 0;
 }
 
@@ -109,11 +111,37 @@ p {
   margin-bottom: 20px;
 }
 
-.top-content .text-container {
+.text-container {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
 }
+
+footer {
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Index */
 
 .middle-content {
   margin-bottom: 20px;
@@ -162,28 +190,10 @@ p {
   padding-right: 0;
 }
 
-footer {
-  background: black;
-  display: flex;
-  justify-content: center;
-}
+/* About */
 
-footer nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 2%;
-  font-size: 14px;
-}
-
-footer nav a {
-  color: white;
-  text-decoration: none;
-}
-
-footer nav a:hover {
-  text-decoration: underline;
+.text-about {
+  width: auto;
 }
 
 /* Colours */
@@ -230,26 +240,23 @@ footer nav a:hover {
 
 /* About Page */
 
-.top-content > .width-auto {
-  width: auto;
-}
 
 .learn-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.learn-box {
+.card {
   border-bottom: 1px dashed black;
   margin: 15px;
   width: 46%;
 }
 
-.learn-box > h2 {
+.card > h2 {
   margin: 10px 0;
 }
 
-.learn-box > button {
+.card > button {
   background-color: white;
   border-radius: 10px;
   border: 2px solid black;
@@ -269,7 +276,7 @@ footer nav a:hover {
     100% { transform: translateX(0); }
 }
 
-.learn-box > button:hover {
+.card > button:hover {
   animation-iteration-count: 1;
   animation: swing 1s ease;
   background-color: black;
